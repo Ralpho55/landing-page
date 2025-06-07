@@ -1,9 +1,14 @@
 body {
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 60px;
+  font-family: roboto;
+}
+
+.big-container{
+  background-color: #1F2937;
 }
 
 
@@ -16,15 +21,29 @@ img {
 .hero-image img {
   width: 400px;
   height:auto;
+  flex-shrink:0;
 }
 
 .header{
+  
     display:flex;
     justify-content: space-between;
     align-items:center;
     padding: 20px 0;
     gap:16px;
     margin-bottom: 100px;
+    background-color: #1F2937;
+}
+
+.logo{
+  font-size:24px;
+  color:#F9FAF8;
+}
+
+.header a{
+  font-size: 18px;
+  color:#e5e7eb;
+
 }
 
 .hero{
@@ -34,11 +53,31 @@ img {
   gap:40px;
   padding: 50px 0;
   margin-bottom: 100px;
+  background-color: #1F2937;
+
+  
 
 }
 
-.hero-text{
+.hero-text h1{
   flex:1;
+  font-size: 48px;
+  color:#F9FAF8;
+  font-weight: 900;
+}
+
+.hero-text p{
+  font-size: 18px;
+  color:#e5e7eb;
+}
+
+.hero button{
+  background-color: #3882F6;
+  color:#F9FAF8;
+  padding:12px;
+  border-radius: 10px;
+  text-align: center;
+  
 }
 
 .nav {
@@ -49,12 +88,21 @@ img {
 
 .info-cards{
   display:flex;
+  flex:1;
   flex-direction: column;
+  background-color: white;
+}
+
+.info-cards h2{
+  font-size:36px;
+  color:#1F2937;
+  font-weight:900;
+  text-align: center;
 }
 
 .container{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items:center;
   margin: 50px 0;
@@ -82,13 +130,23 @@ img {
   flex-direction: column;
   justify-content: center;
   padding:50px 100px;
+  background-color: #e5e7eb;
+}
+
+.quote p{
+  font-size:36px;
+  font-family: light italic;
+  color: #1F2937;
 }
 
 .cta{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items:center;
-  background-color:blue;
+  background-color: #3882F6;
+  border-radius:12px;
+  padding: 0 100px;
+  margin-bottom: 100px;;
 }
 
 .cta-text{
@@ -99,5 +157,9 @@ img {
 
 .cta button{
   padding:10px 20px;
+  background-color: #3882F6;
+  color: white;
+  border-color: white;
+  border-radius: 12px;
 
 }
