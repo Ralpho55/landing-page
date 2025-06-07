@@ -49,12 +49,18 @@ img {
 
 .info-cards{
   display:flex;
+  flex-direction: column;
+}
+
+.container{
+  display:flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items:center;
   margin: 50px 0;
   text-align: center;
   gap: 20px;
-}
+} 
 
 .card{
   display:flex;
